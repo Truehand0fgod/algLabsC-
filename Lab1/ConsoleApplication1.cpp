@@ -3,14 +3,15 @@
 #include <iostream>
 #include <ctime>
 
-const int N = 10000000;
+const int N = 1000000;
 static int merge_count;
 
 class Sort
 {
 public:
 
-	static int shell_sort(int **mass, int n)
+	template <typename Type>
+	static int shell_sort(Type **mass, Type n)
 	{
 		int i, j, step, count = 0;
 		for (step = n / 2; step > 0; step /= 2)
@@ -85,9 +86,9 @@ public:
 	//	}
 	//	return heap_count;
 	//}
-
-	static void merge_rec(int** A, int b, int e,
-		int** D)
+	template <typename Type>
+	static void merge_rec(Type** A, int b, int e,
+		Type** D)
 	{
 		int c = (b + e) / 2;
 		if (b < c) merge_rec(A, b, c, D);
@@ -109,19 +110,19 @@ public:
 		for (int i = b; i <= e; i++)
 			A[i] = D[i];
 	}
-
-	static int merge_sort(int** A, int n)
+	template <typename Type>
+	static int merge_sort(Type** A, int n)
 	{
 		merge_count = 0;
-		int** D = new int*[n];
+		Type** D = new Type*[n];
 		merge_rec(A, 0, n - 1, D);
 		delete[] D;
 		return merge_count;
 	}
 
 
-
-	static bool is_sorted(int **ptr, int n)
+	template <typename Type>
+	static bool is_sorted(Type **ptr, int n)
 	{
 		for (int i = 0; i < n - 1; i++)
 		{
