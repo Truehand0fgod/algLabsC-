@@ -1,0 +1,112 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(154,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,19): error C2676: бинарный "<": "Type" не определяет этот оператор или преобразование к типу приемлемо к встроенному оператору
+C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,19): error C2676:         with
+C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,19): error C2676:         [
+C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,19): error C2676:             Type=Participant
+C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,19): error C2676:         ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(3546,30):
+  может быть "bool std::operator <(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)': не удалось вывести аргумент шаблон для 'const std::unique_ptr<_Ty,_Dx> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(3540,30):
+  или       "bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)': не удалось вывести аргумент шаблон для 'const std::unique_ptr<_Ty,_Dx> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(3482,17):
+  или       "bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)': не удалось вывести аргумент шаблон для 'const std::unique_ptr<_Ty,_Dx> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1910,17):
+  или       "bool std::operator <(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(std::nullptr_t,const std::shared_ptr<_Ty> &) noexcept': не удалось вывести аргумент шаблон для 'const std::shared_ptr<_Ty> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1905,17):
+  или       "bool std::operator <(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const std::shared_ptr<_Ty> &,std::nullptr_t) noexcept': не удалось вывести аргумент шаблон для 'const std::shared_ptr<_Ty> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1858,17):
+  или       "bool std::operator <(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty0> &) noexcept': не удалось вывести аргумент шаблон для 'const std::shared_ptr<_Ty> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xstring(5102,17):
+  или       "bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const ) noexcept"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *const ) noexcept': не удалось вывести аргумент шаблон для 'const std::basic_string<_Elem,_Traits,_Alloc> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xstring(5096,17):
+  или       "bool std::operator <(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const _Elem *const ,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept': не удалось вывести аргумент шаблон для 'const _Elem *const ' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xstring(5090,17):
+  или       "bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &) noexcept': не удалось вывести аргумент шаблон для 'const std::basic_string<_Elem,_Traits,_Alloc> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(4251,5):
+  или       "bool std::operator <(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const std::move_iterator<_Iter> &,const std::move_iterator<_Iter2> &) noexcept(<expr>)': не удалось вывести аргумент шаблон для 'const std::move_iterator<_Iter> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility(1716,5):
+  или       "bool std::operator <(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const std::reverse_iterator<_BidIt> &,const std::reverse_iterator<_BidIt2> &) noexcept(<expr>)': не удалось вывести аргумент шаблон для 'const std::reverse_iterator<_BidIt> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\utility(513,27):
+  или       "bool std::operator <(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)"
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,10):
+  	'bool std::operator <(const std::pair<_Ty1,_Ty2> &,const std::pair<_Uty1,_Uty2> &)': не удалось вывести аргумент шаблон для 'const std::pair<_Ty1,_Ty2> &' из 'Type'
+          with
+          [
+              Type=Participant
+          ]
+  C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(21,19):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	C:\Users\escap\Desktop\алг и стр дан лаб\algLabsC-\Lab2\ConsoleApplication1.cpp(170,8):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "int Sort::shell_sort<Participant>(Type **,int)"
+          with
+          [
+              Type=Participant
+          ]
+  

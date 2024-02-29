@@ -1,5 +1,1 @@
-﻿  ConsoleApplication1.cpp
-C:\Users\Nikita\Documents\GitHub\algLabsC-\Lab1\ConsoleApplication1.cpp(139,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Nikita\Documents\GitHub\algLabsC-\Lab1\ConsoleApplication1.cpp(158,25): warning C4244: инициализация: преобразование "clock_t" в "float", возможна потеря данных
-C:\Users\Nikita\Documents\GitHub\algLabsC-\Lab1\ConsoleApplication1.cpp(180,25): warning C4244: инициализация: преобразование "clock_t" в "float", возможна потеря данных
-  ConsoleApplication1.vcxproj -> C:\Users\Nikita\Documents\GitHub\algLabsC-\Lab1\Debug\ConsoleApplication1.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: Не удается найти средства сборки для v143 (набор инструментов платформы = "v143"). Чтобы выполнить сборку с использованием средств сборки v143 установите средства сборки v143.  Кроме того, можно выполнить обновление до текущей версии средств Visual Studio, перейдя в меню "Проект" или щелкнув решение правой кнопкой мыши и выбрав "Обновить решение...".
