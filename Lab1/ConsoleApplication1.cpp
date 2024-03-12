@@ -3,7 +3,7 @@
 #include <iostream>
 #include <ctime>
 
-const int N = 1000000;
+const int N = 10;
 static int merge_count;
 
 class Sort
@@ -11,81 +11,20 @@ class Sort
 public:
 
 	template <typename Type>
-	static int shell_sort(Type **mass, Type n)
+	static int shell_sort(Type** A, int n)
 	{
-		int i, j, step, count = 0;
-		for (step = n / 2; step > 0; step /= 2)
-			for (i = step; i < n; i++)
-			{
-				for (j = i; j >= step; j -= step, count++)
-				{
-					if (*mass[i] < *mass[j - step])
-					{
-						mass[j] = mass[j - step];
-						count++;
-					}
-					else
-					{
-						count++;
-						break;
-					}
-				}
-				mass[j] = mass[i];
-			}
-		return count;
+		int i, j, h;
+		for (h = 1; h <= n / 9; h = h * 3 + 1);
+		while (h >= 1)
+		{
+			for (i = h; i < n; i++)
+				for (j = i - h; j >= 0 && *A[j] < *A[j + h]; j -= h)
+					swap(A[j], A[j + h]);
+			h = (h - 1) / 3;
+		}
+		return 0;
 	}
 
-		
-
-	//static void heapify(int **arr, int n, int i)
-	//{
-	//	heap_count += 2;
-	//	int largest = i;
-	//	// Инициализируем наибольший элемент как корень
-	//	int l = 2 * i + 1; // левый = 2*i + 1
-	//	int r = 2 * i + 2; // правый = 2*i + 2
-
-	// // Если левый дочерний элемент больше корня
-	//	if (l < n && *arr[l] > *arr[largest])
-	//	{
-	//		largest = l;
-	//		heap_count++;
-	//	}
-	//	// Если правый дочерний элемент больше, чем самый большой элемент на данный момент
-	//	if (r < n && *arr[r] > *arr[largest])
-	//	{
-	//		largest = r;
-	//		heap_count++;
-	//	}
-	//	// Если самый большой элемент не корень
-	//	if (largest != i)
-	//	{
-	//		swap(arr[i], arr[largest]);
-
-	////		// Рекурсивно преобразуем в двоичную кучу затронутое поддерево
-	//		heapify(arr, n, largest);
-	//	}
-	//}
-
-	//// Основная функция, выполняющая пирамидальную сортировку
-	//static int heap_sort(int **arr, int n)
-	//{
-	//	heap_count = 0;
-	//	// Построение кучи (перегруппируем массив)
-	//	for (int i = n / 2 - 1; i >= 0; i--)
-	//		heapify(arr, n, i);
-
-	//	// Один за другим извлекаем элементы из кучи
-	//	for (int i = n - 1; i >= 0; i--)
-	//	{
-	//		// Перемещаем текущий корень в конец
-	//		swap(arr[0], arr[i]);
-
-	//		// вызываем процедуру heapify на уменьшенной куче
-	//		heapify(arr, i, 0);
-	//	}
-	//	return heap_count;
-	//}
 	template <typename Type>
 	static void merge_rec(Type** A, int b, int e,
 		Type** D)
@@ -146,7 +85,7 @@ int main()
 		descending_order[i] = N - i;
 		rand_array[i] = rand() % (N);
 	}
-	int** ptr_as = new int* [N];		// выделяем память 
+	int** ptr_as = new int *[N];		// выделяем память 
 	int** ptr_des = new int* [N];
 	int** ptr_rand = new int* [N];
 	for (int i = 0; i < N; i++)			// заполняем указатели
@@ -164,7 +103,7 @@ int main()
 	float shell_delta_time = clock() - shell_start_time; //засекаем + первод в с
 
 	if (Sort::is_sorted(ptr_as, N) && Sort::is_sorted(ptr_des, N) && Sort::is_sorted(ptr_rand, N))
-		cout << "All arrays are SORETED by Shell!!"<<endl;
+		cout << "\nAll arrays are SORETED by Shell!!"<<endl;
 	else
 		cout << "All arrays aren`t SORETED by Shell!!" << endl;
 	cout << "Shell sort:\t\t" << endl << "ascending => \t\t" << shell_counter_as << endl;
