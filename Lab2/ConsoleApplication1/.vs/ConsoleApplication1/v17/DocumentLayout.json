@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\escap\\Desktop\\123\\ConsoleApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27361A84-591F-49C0-8406-F43FE2ADEC59}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\escap\\Desktop\\123\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{27361A84-591F-49C0-8406-F43FE2ADEC59}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9DC44C82-82C7-47E2-AB3F-DF6EDF6543A1}|ConsoleApplication1.vcxproj|C:\\Users\\escap\\Desktop\\123\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9DC44C82-82C7-47E2-AB3F-DF6EDF6543A1}|ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ConsoleApplication1.cpp",
-              "DocumentMoniker": "C:\\Users\\escap\\Desktop\\123\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
-              "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1.cpp",
-              "ToolTip": "C:\\Users\\escap\\Desktop\\123\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
-              "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\escap\\Desktop\\123\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1.cpp",
+              "ToolTip": "C:\\Users\\escap\\Desktop\\123\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "RelativeToolTip": "ConsoleApplication1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-12T14:52:07.44Z",
+              "WhenOpened": "2024-03-12T17:31:11.503Z",
               "EditorCaption": ""
             }
           ]
